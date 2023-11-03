@@ -1,2 +1,2 @@
-# satyasaadhak.github.io
+# Satyasaadhak
 Truth seeker
