@@ -8,7 +8,7 @@ function App() {
         <p>
           Satyasaadhak - truth seeker...
         </p>
-        <p>I think...</p>
+        <p>I think..that's what I do</p>
       </header>
     </div>
   );
