@@ -1,11 +1,31 @@
 import './App.css';
 import Sidebar from "./components/sidebar/Sidebar";
+import Header from "./components/header/Header";
 
 const CONFIG = {
     "logo": {
         "src": "/icons/logo.jpeg",
         "alt": "Satyasaadhak - truth seeker..."
     },
+    "header": {
+        "logo": "/icons/satyasaadhak - truth seeker....png",
+        "logo-mobile": "/icons/satyasaadhak - truth seeker... Mobile.png",
+        "alt": "Satyasaadhak - truth seeker..."
+    },
+    "navigation": [
+        {
+            "label": "about",
+            "url": "#"
+        },
+        {
+            "label": "portfolio",
+            "url": "#"
+        },
+        {
+            "label": "contact",
+            "url": "#"
+        }
+    ],
     "subtitle": "I think...",
     "links": [
         {
@@ -36,6 +56,7 @@ function App() {
     <div className="App container">
       <Sidebar logo={CONFIG.logo} subtitle={CONFIG.subtitle} links={CONFIG.links} />
       <main className="App-main">
+        <Header src={CONFIG.header.logo} alt={CONFIG.header.alt} navigation={CONFIG.navigation} />
       </main>
     </div>
   );
