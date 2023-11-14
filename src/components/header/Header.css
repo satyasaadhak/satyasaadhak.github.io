@@ -1,0 +1,27 @@
+.App-header {
+    position: relative;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.App-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #1D2436;
+}
+.Header-navigation {
+    list-style-type: none;
+}
+.Header-navigation-item {
+    display: inline-block;
+    color: #1D2436;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.Header-navigation-link {
+    color: #1D2436;
+}
