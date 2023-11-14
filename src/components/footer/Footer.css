@@ -1,0 +1,20 @@
+.App-footer {
+    position: relative;
+    text-align: left;
+    margin: 0 0 90px 0;
+    height: 6rem;
+}
+.App-footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #1D2436;
+}
+.Footer-copyright {
+    color: #1D2436;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+}
