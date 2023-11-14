@@ -1,6 +1,8 @@
 import './App.css';
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
+import Body from './components/body/Body';
+import Footer from "./components/footer/Footer";
 
 const CONFIG = {
     "logo": {
@@ -48,7 +50,10 @@ const CONFIG = {
             "link": "https://www.youtube.com/@satyasadhak",
             "icon": "/icons/youtube-128.png"
         }
-    ]
+    ],
+    "footer": {
+        "copyright": "© 2023 Satyasaadhak. All rights reserved."
+    }
 }
 
 function App() {
@@ -57,6 +62,8 @@ function App() {
       <Sidebar logo={CONFIG.logo} subtitle={CONFIG.subtitle} links={CONFIG.links} />
       <main className="App-main">
         <Header src={CONFIG.header.logo} alt={CONFIG.header.alt} navigation={CONFIG.navigation} />
+        <Body />
+        <Footer copyright={CONFIG.footer.copyright} />
       </main>
     </div>
   );
