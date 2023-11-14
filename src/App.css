@@ -8,17 +8,18 @@
 }
 
 .App-main {
-  margin-left: 32px;
+  margin-left: 282px;
   width: 100%;
   max-width: 1258px;
   min-height: 100vh;
 }
 
 .App-sidebar {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 220px;
   max-width: 230px;
   width: 100%;
-  vertical-align: top;
+  position: fixed;
+  left: 0;
 }
 
 /* .App-header {
