@@ -12,3 +12,9 @@
     position: fixed;
     left: 0;
 }
+
+.App-body {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2.75rem;
+}
