@@ -6,33 +6,3 @@
 .App > * {
   display: inline-block;
 }
-
-.App-main {
-  margin-left: 282px;
-  width: 100%;
-  max-width: 1258px;
-  min-height: 100vh;
-}
-
-.App-sidebar {
-  margin: 0 0 0 220px;
-  max-width: 230px;
-  width: 100%;
-  position: fixed;
-  left: 0;
-}
-
-/* .App-header {
-  background-color: #FFF;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #1D2436;
-} */
-
-.App-link {
-  color: #61dafb;
-}
