@@ -1,8 +1,11 @@
 import './App.css';
-import Sidebar from "./components/sidebar/Sidebar";
-import Header from "./components/header/Header";
-import Body from './components/body/Body';
-import Footer from "./components/footer/Footer";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Layout from './views/Layout';
+import About from './views/about/About';
+import Portfolio from './views/portfolio/Portfolio';
+import Contact from './views/contact/Contact';
 
 const CONFIG = {
     "logo": {
@@ -11,21 +14,22 @@ const CONFIG = {
     },
     "header": {
         "logo": "/icons/satyasaadhak - truth seeker....png",
-        "logo-mobile": "/icons/satyasaadhak - truth seeker... Mobile.png",
+        "logoFixed": "/icons/satyasaadhak - truth seeker... fixed.png",
+        "logoMobile": "/icons/satyasaadhak - truth seeker... Mobile.png",
         "alt": "Satyasaadhak - truth seeker..."
     },
     "navigation": [
         {
             "label": "about",
-            "url": "#"
+            "url": "/"
         },
         {
             "label": "portfolio",
-            "url": "#"
+            "url": "/portfolio"
         },
         {
             "label": "contact",
-            "url": "#"
+            "url": "/contact"
         }
     ],
     "subtitle": "I think...",
@@ -58,14 +62,15 @@ const CONFIG = {
 
 function App() {
   return (
-    <div className="App container">
-      <Sidebar logo={CONFIG.logo} subtitle={CONFIG.subtitle} links={CONFIG.links} />
-      <main className="App-main">
-        <Header src={CONFIG.header.logo} alt={CONFIG.header.alt} navigation={CONFIG.navigation} />
-        <Body />
-        <Footer copyright={CONFIG.footer.copyright} />
-      </main>
-    </div>
+    <Router basename=''>
+        <Routes>
+            <Route path='' element={<Layout CONFIG={CONFIG} />}>
+                <Route index element={<About />}></Route>
+                <Route path='/portfolio' element={<Portfolio />}></Route>
+                <Route path='/contact' element={<Contact />}></Route>
+            </Route>
+        </Routes>
+    </Router>
   );
 }
 

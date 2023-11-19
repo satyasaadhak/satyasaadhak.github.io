@@ -1,0 +1,14 @@
+.App-main {
+    margin-left: 282px;
+    width: 100%;
+    max-width: 1258px;
+    min-height: 100vh;
+}
+
+.App-sidebar {
+    margin: 0 0 0 220px;
+    max-width: 230px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
