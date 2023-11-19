@@ -1,0 +1,25 @@
+.Journey-card {
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.Journey-logo {
+    width: 10rem;
+}
+
+.Journey-logo img {
+    width: 100%;
+}
+
+.Journey-details {
+    margin-left: 5rem;
+}
+
+.Journey-details p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.Journey-position {
+    margin-bottom: 1rem;
+}

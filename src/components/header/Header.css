@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFF;
 }
 .App-header::after {
     content: "";
