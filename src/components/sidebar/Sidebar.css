@@ -21,7 +21,7 @@
 }
 
 .Sidebar-link-url {
-    color: #1D2436;
+    color: var(--primary-color);
     font-size: 18px;
 }
 
