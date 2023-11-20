@@ -1,0 +1,48 @@
+.contact form {
+    width: 54rem;
+    text-align: left;
+}
+
+.contact form textarea {
+    resize: unset;
+    height: 21rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: .315rem;
+    font-size: 1.5rem;
+    padding: .6rem .625rem .375rem;
+    font-family: 'Kalam', cursive;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder {
+    color: rgba(29, 35, 53, 75%);
+    opacity: 1;
+}
+
+.contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
+    color: rgba(29, 35, 53, 75%);
+}
+
+.contact form input[type=submit] {
+    background: var(--primary-color);
+    color: #FFF;
+    width: 55.375rem;
+}
+
+.Contact-links {
+    margin: 4rem 0 0;
+    width: 55.375rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contact-link {
+    width: 7.5rem;
+    display: inline-block;
+}
