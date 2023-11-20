@@ -2,7 +2,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Layout from './views/Layout';
+import Layout from './layouts/Layout';
 import About from './views/about/About';
 import Portfolio from './views/portfolio/Portfolio';
 import Contact from './views/contact/Contact';

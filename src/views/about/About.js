@@ -54,25 +54,23 @@ export default function About() {
         }
     ];
     
-    return(
-        <main className="App-body about">
-            <section className="About-opening">
-                <header><h1>about</h1></header>
-                
-                <p>Greetings, fellow seekers!</p>
-                <p>Since you're here, I assume you're seeking something. It so happens, so am I!</p>
-                <p>What am I seeking though? Anything and everything.</p>
-                <p>Huh?! What does that even mean? Is this is a developer's profile? Yes, it is. Web developer to be precise (for now). Probably that's what you came here looking for. Ah! That makes sense now, to me at the very least.</p>
-                <p>With that out of the way, a formal introduction. I am Deepak Maurya (hereafter known as, Satyasaadhak - truth seeker...). I am a web application developer, possibly the one you're looking for. I've been in the business for about 6 years now, experienced many technologies and domains during this time. We'll talk about them later, it's a promise.</p>
-                <p>How's the journey been like you ask? Here's a glimpse..</p>
-            </section>
-            <section className="About-journey">
-                <Journey journey={journey} />
-            </section>
-            <section className="About-conclusion">
-                <p>And now you know!</p>
-                <p>There will be more coming, I've made promises. Keep a watch. Bye for now!!</p>
-            </section>
-        </main>
-    );
+    return(<>
+        <section className="About-opening">
+            <header><h1>about</h1></header>
+            
+            <p>Greetings, fellow seekers!</p>
+            <p>Since you're here, I assume you're seeking something. It so happens, so am I!</p>
+            <p>What am I seeking though? Anything and everything.</p>
+            <p>Huh?! What does that even mean? Is this is a developer's profile? Yes, it is. Web developer to be precise (for now). Probably that's what you came here looking for. Ah! That makes sense now, to me at the very least.</p>
+            <p>With that out of the way, a formal introduction. I am Deepak Maurya (hereafter known as, Satyasaadhak - truth seeker...). I am a web application developer, possibly the one you're looking for. I've been in the business for about 6 years now, experienced many technologies and domains during this time. We'll talk about them later, it's a promise.</p>
+            <p>How's the journey been like you ask? Here's a glimpse..</p>
+        </section>
+        <section className="About-journey">
+            <Journey journey={journey} />
+        </section>
+        <section className="About-conclusion">
+            <p>And now you know!</p>
+            <p>There will be more coming, I've made promises. Keep a watch. Bye for now!!</p>
+        </section>
+    </>);
 }

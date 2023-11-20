@@ -4,6 +4,8 @@ body {
   font-family: 'Kalam', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #1D2436;
+  --primary-color: #1D2436;
 }
 
 * {
@@ -42,6 +44,10 @@ h6 {
 
 p {
   font-size: 32px;
+}
+
+section {
+  margin-top: 3rem;
 }
 
 .container {

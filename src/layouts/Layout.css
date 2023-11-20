@@ -5,16 +5,16 @@
     min-height: 100vh;
 }
 
+.App-main p {
+    font-weight: lighter;
+    margin: 2rem 0;
+    line-height: 1.75;
+}
+
 .App-sidebar {
     margin: 0 0 0 220px;
     max-width: 230px;
     width: 100%;
     position: fixed;
     left: 0;
-}
-
-.App-body {
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 2.75rem;
 }
