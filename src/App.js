@@ -51,7 +51,7 @@ const CONFIG = {
         },
         {
             "label": "YouTube/Satyasaadhak",
-            "link": "https://www.youtube.com/@satyasadhak",
+            "link": "https://www.youtube.com/@satyasaadhak",
             "icon": "/icons/youtube-128.png"
         }
     ],
@@ -67,7 +67,7 @@ function App() {
             <Route path='' element={<Layout CONFIG={CONFIG} />}>
                 <Route index element={<About />}></Route>
                 <Route path='/portfolio' element={<Portfolio />}></Route>
-                <Route path='/contact' element={<Contact />}></Route>
+                <Route path='/contact' element={<Contact CONFIG={CONFIG} />}></Route>
             </Route>
         </Routes>
     </Router>
